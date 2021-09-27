@@ -1,0 +1,6 @@
+{
+    "gmail_email": "xyz@gmail.com",
+    "gmail_password": "xyz",
+    "send_list": ["xyz@gmail.com"],
+    "minimum_difficulty": "Medium"
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# call with the base path of the program
+BIN_DIR="$(dirname $0)"
+DIR="$(dirname $BIN_DIR)"
+
+PROGRAM="$DIR/bin/moring_brief.rb"
+CONFIG="$DIR/config.json"
+OUTPUT_LOG="$DIR/logs/output.log"
+
+ruby $PROGRAM --config $CONFIG  1>> $OUTPUT_LOG 2>> $OUTPUT_LOG
