@@ -2,5 +2,6 @@
     "gmail_email": "xyz@gmail.com",
     "gmail_password": "xyz",
     "send_list": ["xyz@gmail.com"],
-    "minimum_difficulty": "Medium"
+    "eleetcoach_url": "http://localhost:8081",
+    "minimum_leetcode_difficulty": "Medium"
 }

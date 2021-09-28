@@ -13,8 +13,8 @@ class Config
     end
   end
 
-  def minimum_difficulty
-    @config[:minimum_difficulty]
+  def minimum_leetcode_difficulty
+    @config[:minimum_leetcode_difficulty]
   end
 
   def send_list
@@ -27,6 +27,10 @@ class Config
 
   def gmail_password
     @config[:gmail_password]
+  end
+
+  def eleetcoach_url
+    @config[:eleetcoach_url]
   end
 
   private

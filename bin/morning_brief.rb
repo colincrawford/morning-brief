@@ -15,11 +15,11 @@ unless config_file_flag_inx.nil?
 end
 config = Config.new(logger: logger, config_file: config_file)
 
-leetcode = Leetcode::Client.new(
+eleetcoach = Eleetcoach::Client.new(
   logger: logger,
-  minimum_difficulty: config.minimum_difficulty
+  base_url: config.eleetcoach_url,
+  minimum_leetcode_difficulty: config.minimum_leetcode_difficulty
 )
-wikipedia_algorithms = Wikipedia::AlgorithmsPage.new
 mailer = GMail.new(
   logger: logger,
   email: config.gmail_email,
@@ -27,8 +27,7 @@ mailer = GMail.new(
 )
 app = App.new(
   logger: logger,
-  leetcode: leetcode,
-  wikipedia_algorithms: wikipedia_algorithms,
+  eleetcoach: eleetcoach,
   mailer: mailer,
   send_list: config.send_list
 )

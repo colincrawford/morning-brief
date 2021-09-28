@@ -1,14 +1,12 @@
 class App
   def initialize(
     logger:,
-    leetcode:,
-    wikipedia_algorithms:,
+    eleetcoach:,
     mailer:,
     send_list:
   )
     @logger = logger
-    @leetcode = leetcode
-    @wikipedia_algorithms = wikipedia_algorithms
+    @eleetcoach = eleetcoach
     @mailer = mailer
     @send_list = send_list
   end
@@ -16,8 +14,8 @@ class App
   def run
     @logger.info { "Running Eleetcoach" }
     send_emails(
-      @leetcode.random_problem,
-      @wikipedia_algorithms.get_random_algorithm
+      @eleetcoach.leetcode_problem,
+      @eleetcoach.wikipedia_algorithm
     )
   end
 
