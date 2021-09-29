@@ -12,7 +12,7 @@ class App
   end
 
   def run
-    @logger.info { "Running Eleetcoach" }
+    @logger.info { "Running MorningBrief" }
     send_emails(
       @eleetcoach.leetcode_problem,
       @eleetcoach.wikipedia_algorithm
@@ -30,8 +30,8 @@ class App
     @logger.info { "Sending problem to #{to}" }
     @mailer.send_html(
       to: to,
-      from: "Eleetcoach <eleetcoach@gmail.com>",
-      subject: "Daily Leetcode Problem",
+      from: "Morning Brief <eleetcoach@gmail.com>",
+      subject: "Morning Brief",
       message: email.html
     )
   end
