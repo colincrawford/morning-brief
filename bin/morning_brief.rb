@@ -20,6 +20,10 @@ eleetcoach = Eleetcoach::Client.new(
   base_url: config.eleetcoach_url,
   minimum_leetcode_difficulty: config.minimum_leetcode_difficulty
 )
+todoapp = Todoapp::Client.new(
+  logger: logger,
+  todoapp_url: config.todoapp_url
+)
 mailer = GMail.new(
   logger: logger,
   email: config.gmail_email,
@@ -28,6 +32,7 @@ mailer = GMail.new(
 app = App.new(
   logger: logger,
   eleetcoach: eleetcoach,
+  todoapp: todoapp,
   mailer: mailer,
   send_list: config.send_list
 )
