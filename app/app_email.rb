@@ -15,7 +15,7 @@ class AppEmail
     categories[categories.size - 1] = tag
 
     todo_list = @todos.map do |todo|
-      "<li><del>#{todo.description}</del></li>" if todo.done
+      next "<li><del>#{todo.description}</del></li>" if todo.done
       "<li>#{todo.description}</li>"
     end
 
