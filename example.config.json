@@ -1,8 +1,7 @@
 {
-  "gmail_email": "xyz@gmail.com",
-  "gmail_password": "xyz",
-  "send_list": ["xyz@gmail.com"],
-  "eleetcoach_url": "http://localhost:8081",
-  "minimum_leetcode_difficulty": "Medium",
-  "todoapp_url": "http://localhost:8082"
+    "gmail_email": "xyz@gmail.com",
+    "gmail_password": "xyz",
+    "send_list": ["xyz@gmail.com"],
+    "eleetcoach_url": "http://localhost:8081",
+    "minimum_leetcode_difficulty": "Medium"
 }
