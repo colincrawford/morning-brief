@@ -33,6 +33,10 @@ class Config
     @config[:eleetcoach_url]
   end
 
+  def todoapp_url
+    @config[:todoapp_url]
+  end
+
   private
 
   def read_config_file(config_file)
