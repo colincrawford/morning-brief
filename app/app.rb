@@ -34,7 +34,7 @@ class App
   end
 
   def send_email(to, email)
-    @logger.info { "Sending problem to #{to}" }
+    @logger.info { "Sending morning email to #{to}" }
     @mailer.send_html(
       to: to,
       from: "Morning Brief <eleetcoach@gmail.com>",
